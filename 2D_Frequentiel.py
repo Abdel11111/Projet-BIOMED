@@ -429,7 +429,7 @@ def main():
         if boundary_conditions.get(point, 0) == 2:
             vector_1[i - 1] = C
     result_vector1 = np.dot(inverse_matrix_B, vector_1)
-    C1=  (result_vector1[len(figure_points)-1]-result_vector1[1])/2 
+    C1=(np.max(result_vector1)-np.min(result_vector1))/2 
  
 
     # Identifier les points avec condition limite 2
