@@ -327,7 +327,7 @@ def main():
             vector_eq[i-1]=1
             vector_1[i - 1] = C
     result_vector1 = np.dot(inverse_matrix_B, vector_1)
-    C1=  (result_vector1[len(figure_points)-1]-result_vector1[1])/2 
+    C1=(np.max(result_vector1)-np.min(result_vector1))/2 
    
     result_vector2 = np.dot(inverse_matrix_B, vector_eq)
     Fn_values=np.zeros((num_points,300))
